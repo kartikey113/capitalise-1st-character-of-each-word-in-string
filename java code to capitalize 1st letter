@@ -1,0 +1,26 @@
+import java.util.*;
+public class mquestion5 {
+
+	public static String capitalize(String line)
+	{
+	    StringTokenizer token =new StringTokenizer(line);
+	    String L="";
+	    while(token.hasMoreTokens())
+	    {
+	        String tok = token.nextToken().toString();
+	        L += Character.toUpperCase(tok.charAt(0))+ tok.substring(1)+" ";        
+	    }
+	    return L.substring(0,L.length()-1);
+	}
+
+	   
+	public static void main(String[] args) {
+	 
+		 String s="raj is a good boy";
+		 
+		String d= capitalize(s);
+		System.out.println(d);
+		
+	}
+
+}
